@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		4200E98025DBD1670008B527 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4200E97F25DBD1670008B527 /* AppDelegate.swift */; };
 		4200E98225DBD1670008B527 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4200E98125DBD1670008B527 /* SceneDelegate.swift */; };
-		4200E98425DBD1670008B527 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4200E98325DBD1670008B527 /* ViewController.swift */; };
 		4200E98725DBD1670008B527 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4200E98525DBD1670008B527 /* Main.storyboard */; };
 		4200E98925DBD16B0008B527 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4200E98825DBD16B0008B527 /* Assets.xcassets */; };
 		4200E98C25DBD16B0008B527 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4200E98A25DBD16B0008B527 /* LaunchScreen.storyboard */; };
+		4200E99525DBD5C50008B527 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4200E99425DBD5C50008B527 /* LoginViewController.swift */; };
+		4200E99925DBDA740008B527 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4200E99825DBDA740008B527 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4200E97C25DBD1670008B527 /* test_vk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_vk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4200E97F25DBD1670008B527 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4200E98125DBD1670008B527 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4200E98325DBD1670008B527 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4200E98625DBD1670008B527 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4200E98825DBD16B0008B527 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4200E98B25DBD16B0008B527 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4200E98D25DBD16B0008B527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4200E99425DBD5C50008B527 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4200E99825DBDA740008B527 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +58,11 @@
 		4200E97E25DBD1670008B527 /* test_vk */ = {
 			isa = PBXGroup;
 			children = (
+				4200E99825DBDA740008B527 /* SignUpViewController.swift */,
 				4200E97F25DBD1670008B527 /* AppDelegate.swift */,
 				4200E98125DBD1670008B527 /* SceneDelegate.swift */,
-				4200E98325DBD1670008B527 /* ViewController.swift */,
 				4200E98525DBD1670008B527 /* Main.storyboard */,
+				4200E99425DBD5C50008B527 /* LoginViewController.swift */,
 				4200E98825DBD16B0008B527 /* Assets.xcassets */,
 				4200E98A25DBD16B0008B527 /* LaunchScreen.storyboard */,
 				4200E98D25DBD16B0008B527 /* Info.plist */,
@@ -137,8 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4200E98425DBD1670008B527 /* ViewController.swift in Sources */,
+				4200E99525DBD5C50008B527 /* LoginViewController.swift in Sources */,
 				4200E98025DBD1670008B527 /* AppDelegate.swift in Sources */,
+				4200E99925DBDA740008B527 /* SignUpViewController.swift in Sources */,
 				4200E98225DBD1670008B527 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
