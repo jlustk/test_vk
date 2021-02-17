@@ -3,7 +3,7 @@
 //  test_vk
 //
 //  Created by Igor Lavrynenko on 16.02.2021.
-//
+//  first lesson
 
 import UIKit
 
