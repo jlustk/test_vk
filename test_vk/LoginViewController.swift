@@ -9,16 +9,9 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
-    @IBAction func loginName(_ sender: Any) {
-        print(sender)
-    }
-    @IBAction func passUser(_ sender: Any) {
-        print(sender)
-    }
+    @IBOutlet weak var loginName: UITextField!
+    @IBOutlet weak var passUser: UITextField!
     @IBOutlet weak var scrollView: UIScrollView!
-    @IBAction func startBut(_ sender: Any) {
-        print(#function)
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,10 +26,10 @@ class LoginViewController: UIViewController {
             scrollView?.scrollIndicatorInsets = contentInsets
         }
         
-        @objc func keyboardWillBeHidden(notification: Notification) {
-            let contentInsets = UIEdgeInsets.zero
-            scrollView?.contentInset = contentInsets
-        }
+    @objc func keyboardWillBeHidden(notification: Notification) {
+        let contentInsets = UIEdgeInsets.zero
+        scrollView?.contentInset = contentInsets
+    }
     
     override func viewWillAppear(_ animated: Bool) {
             super.viewWillAppear(animated)
@@ -49,4 +42,30 @@ class LoginViewController: UIViewController {
             NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
             NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
         }
+    
+    // MARK: - Tap
+    
+    @IBAction func scrollTapped(_ sender: UITapGestureRecognizer) {
+        print(#function)
+        view.endEditing(true)
+    }
+    
+    // MARK: - Segues
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if identifier == "SuccessLoginVk" {
+            print("ok")
+            let login = validLogin()
+            if !login {
+                loginErrorAlert(msg: "access denied")
+            }
+            return login
+        }
+        return false
+    }
+    
+    func validLogin() -> Bool {
+        return loginName.text == "test" && passUser.text == "123"
+    }
+    
 }
