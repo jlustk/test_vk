@@ -14,6 +14,13 @@
 		4200E98C25DBD16B0008B527 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4200E98A25DBD16B0008B527 /* LaunchScreen.storyboard */; };
 		4200E99525DBD5C50008B527 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4200E99425DBD5C50008B527 /* LoginViewController.swift */; };
 		4200E9A425E924300008B527 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4200E9A325E924300008B527 /* UIViewControllerExtension.swift */; };
+		4200E9B025EE31DF0008B527 /* FriendsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4200E9AF25EE31DF0008B527 /* FriendsListViewController.swift */; };
+		4200E9B325EE34800008B527 /* FriendsInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4200E9B225EE34800008B527 /* FriendsInfoViewController.swift */; };
+		4200E9BB25EE45770008B527 /* GroupRowViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4200E9BA25EE45770008B527 /* GroupRowViewCell.swift */; };
+		4200E9C825EE4BD70008B527 /* GroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4200E9C725EE4BD70008B527 /* GroupsTableViewController.swift */; };
+		4200E9CB25EE50570008B527 /* MyGroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4200E9CA25EE50570008B527 /* MyGroupsTableViewController.swift */; };
+		4200E9CE25EE5C520008B527 /* AllGroupViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4200E9CD25EE5C520008B527 /* AllGroupViewCell.swift */; };
+		4200E9D225EE86700008B527 /* FriesndsInfoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4200E9D125EE866F0008B527 /* FriesndsInfoViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		4200E98D25DBD16B0008B527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4200E99425DBD5C50008B527 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4200E9A325E924300008B527 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		4200E9AF25EE31DF0008B527 /* FriendsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListViewController.swift; sourceTree = "<group>"; };
+		4200E9B225EE34800008B527 /* FriendsInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsInfoViewController.swift; sourceTree = "<group>"; };
+		4200E9BA25EE45770008B527 /* GroupRowViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupRowViewCell.swift; sourceTree = "<group>"; };
+		4200E9C725EE4BD70008B527 /* GroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsTableViewController.swift; sourceTree = "<group>"; };
+		4200E9CA25EE50570008B527 /* MyGroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupsTableViewController.swift; sourceTree = "<group>"; };
+		4200E9CD25EE5C520008B527 /* AllGroupViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupViewCell.swift; sourceTree = "<group>"; };
+		4200E9D125EE866F0008B527 /* FriesndsInfoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriesndsInfoViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +72,63 @@
 		4200E97E25DBD1670008B527 /* test_vk */ = {
 			isa = PBXGroup;
 			children = (
+				4200E98D25DBD16B0008B527 /* Info.plist */,
+				4200E9B825EE45140008B527 /* Helpers */,
+				4200E9B725EE44F10008B527 /* View */,
+				4200E9B625EE44C20008B527 /* Resources */,
+				4200E9B525EE447D0008B527 /* Controllers */,
+			);
+			path = test_vk;
+			sourceTree = "<group>";
+		};
+		4200E9B525EE447D0008B527 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4200E99425DBD5C50008B527 /* LoginViewController.swift */,
+				4200E9AF25EE31DF0008B527 /* FriendsListViewController.swift */,
+				4200E9B225EE34800008B527 /* FriendsInfoViewController.swift */,
+				4200E9CA25EE50570008B527 /* MyGroupsTableViewController.swift */,
+				4200E9C725EE4BD70008B527 /* GroupsTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4200E9B625EE44C20008B527 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4200E98A25DBD16B0008B527 /* LaunchScreen.storyboard */,
+				4200E98825DBD16B0008B527 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4200E9B725EE44F10008B527 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4200E9B925EE45340008B527 /* Cells */,
+				4200E98525DBD1670008B527 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4200E9B825EE45140008B527 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
 				4200E9A325E924300008B527 /* UIViewControllerExtension.swift */,
 				4200E97F25DBD1670008B527 /* AppDelegate.swift */,
 				4200E98125DBD1670008B527 /* SceneDelegate.swift */,
-				4200E98525DBD1670008B527 /* Main.storyboard */,
-				4200E99425DBD5C50008B527 /* LoginViewController.swift */,
-				4200E98825DBD16B0008B527 /* Assets.xcassets */,
-				4200E98A25DBD16B0008B527 /* LaunchScreen.storyboard */,
-				4200E98D25DBD16B0008B527 /* Info.plist */,
 			);
-			path = test_vk;
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4200E9B925EE45340008B527 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4200E9BA25EE45770008B527 /* GroupRowViewCell.swift */,
+				4200E9CD25EE5C520008B527 /* AllGroupViewCell.swift */,
+				4200E9D125EE866F0008B527 /* FriesndsInfoViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +201,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4200E9BB25EE45770008B527 /* GroupRowViewCell.swift in Sources */,
+				4200E9CB25EE50570008B527 /* MyGroupsTableViewController.swift in Sources */,
+				4200E9C825EE4BD70008B527 /* GroupsTableViewController.swift in Sources */,
+				4200E9B325EE34800008B527 /* FriendsInfoViewController.swift in Sources */,
+				4200E9CE25EE5C520008B527 /* AllGroupViewCell.swift in Sources */,
 				4200E99525DBD5C50008B527 /* LoginViewController.swift in Sources */,
 				4200E98025DBD1670008B527 /* AppDelegate.swift in Sources */,
+				4200E9B025EE31DF0008B527 /* FriendsListViewController.swift in Sources */,
+				4200E9D225EE86700008B527 /* FriesndsInfoViewCell.swift in Sources */,
 				4200E9A425E924300008B527 /* UIViewControllerExtension.swift in Sources */,
 				4200E98225DBD1670008B527 /* SceneDelegate.swift in Sources */,
 			);
