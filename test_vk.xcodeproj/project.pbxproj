@@ -21,6 +21,7 @@
 		4200E9CB25EE50570008B527 /* MyGroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4200E9CA25EE50570008B527 /* MyGroupsTableViewController.swift */; };
 		4200E9CE25EE5C520008B527 /* AllGroupViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4200E9CD25EE5C520008B527 /* AllGroupViewCell.swift */; };
 		4200E9D225EE86700008B527 /* FriesndsInfoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4200E9D125EE866F0008B527 /* FriesndsInfoViewCell.swift */; };
+		4200E9D625EFC4070008B527 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4200E9D525EFC4060008B527 /* UserData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		4200E9CA25EE50570008B527 /* MyGroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupsTableViewController.swift; sourceTree = "<group>"; };
 		4200E9CD25EE5C520008B527 /* AllGroupViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupViewCell.swift; sourceTree = "<group>"; };
 		4200E9D125EE866F0008B527 /* FriesndsInfoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriesndsInfoViewCell.swift; sourceTree = "<group>"; };
+		4200E9D525EFC4060008B527 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,10 +75,11 @@
 			isa = PBXGroup;
 			children = (
 				4200E98D25DBD16B0008B527 /* Info.plist */,
-				4200E9B825EE45140008B527 /* Helpers */,
+				4200E9D425EFC3E10008B527 /* Models */,
 				4200E9B725EE44F10008B527 /* View */,
-				4200E9B625EE44C20008B527 /* Resources */,
 				4200E9B525EE447D0008B527 /* Controllers */,
+				4200E9B625EE44C20008B527 /* Resources */,
+				4200E9B825EE45140008B527 /* Helpers */,
 			);
 			path = test_vk;
 			sourceTree = "<group>";
@@ -129,6 +132,14 @@
 				4200E9D125EE866F0008B527 /* FriesndsInfoViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		4200E9D425EFC3E10008B527 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4200E9D525EFC4060008B527 /* UserData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +218,7 @@
 				4200E9B325EE34800008B527 /* FriendsInfoViewController.swift in Sources */,
 				4200E9CE25EE5C520008B527 /* AllGroupViewCell.swift in Sources */,
 				4200E99525DBD5C50008B527 /* LoginViewController.swift in Sources */,
+				4200E9D625EFC4070008B527 /* UserData.swift in Sources */,
 				4200E98025DBD1670008B527 /* AppDelegate.swift in Sources */,
 				4200E9B025EE31DF0008B527 /* FriendsListViewController.swift in Sources */,
 				4200E9D225EE86700008B527 /* FriesndsInfoViewCell.swift in Sources */,
